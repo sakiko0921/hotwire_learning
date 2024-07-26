@@ -28,6 +28,11 @@ module Myapp
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w(assets tasks))
 
+    # タイムゾーンをTokyo（日本）にする
+    config.time_zone = "Tokyo"
+    # デフォルトのロケールを日本にする
+    config.i18n.default_locale = :ja
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
